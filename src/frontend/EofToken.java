@@ -1,0 +1,30 @@
+package frontend;
+
+/**
+ * The Generic end-of-file token.
+ *
+ * Created by abbiewade on 7/2/17.
+ */
+public class EofToken {
+
+    /**
+     * Constructor.
+     * @param source the source from where to fetch subsequent characters
+     * @throws Exception if an error occurred
+     */
+    public EofToken(Source source)
+            throws Exception{
+        super(source);
+    }
+
+    /**
+     * Do nothing. Do not consume any source characters.
+     * @param source the source from where to fetch the tokens characters
+     * @throws Exception if an error occurred.
+     */
+    protected void extract(Source source)
+            throws Exception{
+
+    }
+
+}
